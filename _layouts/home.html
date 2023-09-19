@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<ul>
+  {%- for post in site.posts -%}
+  <li>
+    {%- if post.external -%}
+    <a href="{{ post.external }}" target="_blank" rel="noopener noreferrer">
+    {%- else -%}
+    <a href="{{ post.url | relative_url }}">
+    {%- endif -%}
+    {{ post.date | date: "%Y-%m-%d" }} {{ post.title | escape }}
+    <span>
+    {%- if post.external and post.source -%}
+    [{{ post.source | escape }}]
+    {%- endif -%}
+    </span>
+    </a>
+  </li>
+  {%- endfor -%}
+</ul>

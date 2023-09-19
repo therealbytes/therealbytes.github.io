@@ -1,0 +1,26 @@
+title: metaverse jesus
+
+header_pages:
+  - index.md
+  - about.md
+
+listen_for_clients_preferred_style: false
+style: dark
+
+exclude:
+  - README.md
+
+# plugins:
+#   - jekyll-feed
+#   - jekyll-spaceship
+
+# jekyll-spaceship:
+#   processors:
+#     - mathjax-processor
+#     - mermaid-processor
+#   mermaid-processor:
+#     syntax:
+#       code: 'mermaid'
+#     config:
+#       theme: neutral
+#     src: https://mermaid.ink/img/
