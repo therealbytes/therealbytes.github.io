@@ -42,6 +42,11 @@ ul { list-style: none; list-style-type: none; padding-left: 0; }
 :not(.menu)>ul>li:before { content: "-"; margin-right: 9px; }
 :not(.menu)>ul>li>a { display: flex; justify-content: space-between; flex-grow: 1; }
 :not(.menu)>ul>li>a>span { margin-left: auto; opacity: 0.5; }
+:not(.menu)>ul>li>a>span {
+    @media (max-width: 600px) {
+        display: none;
+    }
+}
 
 /**
  * Header/Navigation
